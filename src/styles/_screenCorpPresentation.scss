@@ -1,0 +1,13 @@
+.screen {
+  background-image: linear-gradient(to bottom, #8e8e8e 85%, #808080);
+  height: 75.5vh;
+  display: flex;
+  padding-left: 12.5%;
+  margin-top: 10.5vh;
+  flex-direction: row;
+}
+.margin-right-background {
+  background-color: #8e8e8e;
+  width: 25%;
+  box-shadow: inset 3vw 0 2vw -2vw #838383;
+}

@@ -1,10 +1,16 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
 const Nav = () => {
     return (
         <nav>
-            <h1>Rankings</h1>
-            <h1>Hall of Fame</h1>
-            <div className="search-box">
+            <div className="menu-items">
+                <h1>Rankings</h1>
+                <h1>Hall of Fame</h1>
+            </div>
 
+            <div className="search-box">
+                <FontAwesomeIcon icon={faSearch} />
             </div>
         </nav>
     );

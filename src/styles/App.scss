@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  color: #58595b;
+  display: inline-block;
+}
+
+h3,
+h4 {
+  font-weight: 400;
+  color: rgb(64, 96, 105);
+}
+.App {
+  width: 100vw;
+  height: 100vh;
+  .background-test-ref {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    background-image: url(./images/design_test.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+  }
+}
+@import "./corpStats";
+@import "./info";
+@import "./nav";
+@import "./nextSection";
+@import "./screenCorpPresentation";

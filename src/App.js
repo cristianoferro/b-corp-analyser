@@ -1,21 +1,20 @@
 import { useState } from "react";
-import CorpStats from "./components/CorpStats";
-import Info from "./components/Info";
 import Nav from "./components/Nav";
-import NextIn from "./components/NextIn";
+import ScreenCorpPresentation from "./components/ScreenCorpPresentation";
 import data from "./data";
+import "./styles/App.scss";
 
 function App() {
 
   const [corps, setCorp] = useState(data());
   const [currentCorp, setCurrentCorp] = useState(corps[0]);
-
+  
   return (
     <div className="App">
+      <div className="background-test-ref"></div>
       <Nav />
-      <Info currentCorp={currentCorp} />
-      <CorpStats />
-      <NextIn />
+      <ScreenCorpPresentation currentCorp={currentCorp}/>
+      
     </div>
   );
 }

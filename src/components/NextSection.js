@@ -1,7 +1,7 @@
 import NextElement from "./NextElement";
-const NextIn = () => {
+const NextSection = () => {
     return (
-        <div>
+        <div className="next-section">
             {/*NextElement loop*/}
             <p>
                 See more
@@ -11,4 +11,4 @@ const NextIn = () => {
     );
 }
 
-export default NextIn;
+export default NextSection;

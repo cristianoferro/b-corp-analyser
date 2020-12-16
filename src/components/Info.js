@@ -1,24 +1,29 @@
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobeEurope, faSignal, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
 const Info = ({ currentCorp }) => {
+    console.log("curr curr", currentCorp.currentCorp.company)
     return (
         <div className="info">
-            <h1>
-                Ocean Bottle
-            </h1>
-            <div>
-                <img className="rank-icon" src={currentCorp.logo} alt="Category Ranking" />
-                <span>2</span>
-                <img className="rank-icon" src="" alt="Global Ranking" />
-                <span>25</span>
+            <div className="corp-title">
+                <h1>{currentCorp.currentCorp.company}</h1>
+            </div>
+                
+            <div className="info-rank">
+                <FontAwesomeIcon icon={faSignal} />
+                <span>{currentCorp.currentCorp.category_rank} </span>
+                <FontAwesomeIcon icon={faGlobeEurope} />
+                <span>{currentCorp.currentCorp.global_rank}</span>
             </div>
             <div>
-                <img src="" alt="Logo" />
+                <img className="logo" src={currentCorp.currentCorp.logo} alt="Category Ranking" />
             </div>
-            <p>
-                Ocean Bottle makes reusable bottles that save our Ocean.
-            </p>
+            <p className="description">{currentCorp.currentCorp.description}</p>
 
             <p>
-                About <b>Ocean Bottle</b>
+                About <b>Ocean Bottle</b> 
+                <FontAwesomeIcon icon={faChevronDown}/>
             </p>
             <img className="down-arrow" src="" alt="" />
 

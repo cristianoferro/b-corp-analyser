@@ -1,6 +1,6 @@
 const CorpStats = () => {
     return (
-        <div>
+        <div className="corp-stats" >
             <p>B corp Certified</p>
             <div className="badges">
                 <div className="badge">

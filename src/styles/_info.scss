@@ -1,0 +1,38 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 21.875%;
+  color: white;
+  text-shadow: 2px 2px 5px grey;
+  h1 {
+    font-size: 1.6vw;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px grey;
+  }
+  .corp-title {
+    height: 10.5vh;
+    display: grid;
+    align-items: flex-end;
+  }
+  .info-rank {
+    display: flex;
+    margin-right: 50%;
+    justify-content: space-evenly;
+    height: 7vh;
+    align-items: center;
+    font-weight: 600;
+  }
+  .fa-signal,
+  .fa-globe-europe {
+    color: lightgrey;
+  }
+  .logo {
+    width: 100%;
+    background-color: white;
+    border-radius: 15pt;
+  }
+}
+.description {
+}
