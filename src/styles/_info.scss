@@ -1,9 +1,10 @@
 .info {
   display: flex;
   flex-direction: column;
-  width: 21.875%;
+  width: 25%;
   color: white;
   text-shadow: 2px 2px 5px grey;
+  padding-right: 2vw;
   h1 {
     font-size: 1.6vw;
     font-weight: 700;
@@ -15,6 +16,7 @@
     height: 10.5vh;
     display: grid;
     align-items: flex-end;
+    padding-bottom: 1vh;
   }
   .info-rank {
     display: flex;
@@ -23,16 +25,53 @@
     height: 7vh;
     align-items: center;
     font-weight: 600;
+    font-size: 1.3vw;
   }
   .fa-signal,
   .fa-globe-europe {
     color: lightgrey;
   }
   .logo {
-    width: 100%;
     background-color: white;
-    border-radius: 15pt;
+    border-radius: 2vw;
+    display: flex;
+    height: 28vh;
+    img {
+      background-color: white;
+      border-radius: 15pt;
+      min-height: 100%;
+      object-fit: cover;
+      min-width: 100%;
+    }
+  }
+}
+.about-btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  color: #e6e7e8;
+  font-size: 1.4vw;
+  padding: 1vh 0.5vw;
+  margin: 8vh 0 0 0;
+  cursor: pointer;
+  border-radius: 2vw;
+  transition: 0.1s;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background-color: rgb(168, 168, 168);
+    transition: 0.1s;
+    box-shadow: rgb(168, 168, 168) 0 0 1vw, rgb(168, 168, 168) 0 0 1vw,
+      rgb(168, 168, 168) 0 0 0.3vw, rgb(168, 168, 168) 0 0 1vw;
   }
 }
 .description {
+  margin-left: 5%;
+  margin-top: 5%;
+  font-size: 1.2vw;
+}
+.fa-chevron-down {
+  margin-left: 1vw;
 }

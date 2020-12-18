@@ -1,9 +1,55 @@
 .corp-stats {
-  width: 25%;
+  width: 28.5714285714%;
   background-image: linear-gradient(
     to right,
     #838383,
     #8e8e8e 20%,
     #828282 85%
   );
+  padding: 0 2vw;
+}
+.is-certified {
+  height: 17.5vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  font-size: 1.5vw;
+  text-transform: capitalize;
+  color: #bdf7ff;
+  padding-bottom: 1vh;
+  font-weight: 600;
+}
+.score {
+  font-size: 2vw;
+  color: #bdf7ff;
+  font-weight: 600;
+  text-shadow: #95f3ff 0 0 1vw, #95f3ff 0 0 0.8vw;
+}
+.badges {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 18.75vw;
+  height: 28vh;
+}
+.badge {
+  background-color: #a7a9ac;
+  border-radius: 2vw;
+  height: 8vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 2vw;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5vw;
+  p {
+    margin-left: 2vw;
+  }
+  &:last-child {
+    margin-top: 2vh;
+  }
 }

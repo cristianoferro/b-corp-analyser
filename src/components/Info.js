@@ -16,15 +16,15 @@ const Info = ({ currentCorp }) => {
                 <FontAwesomeIcon icon={faGlobeEurope} />
                 <span>{currentCorp.currentCorp.global_rank}</span>
             </div>
-            <div>
-                <img className="logo" src={currentCorp.currentCorp.logo} alt="Category Ranking" />
+            <div className="logo">
+                <img src={currentCorp.currentCorp.logo} alt="Category Ranking" />
             </div>
             <p className="description">{currentCorp.currentCorp.description}</p>
 
-            <p>
-                About <b>Ocean Bottle</b> 
+            <button className="about-btn">
+                <p> About <b>{currentCorp.currentCorp.company}</b> </p> 
                 <FontAwesomeIcon icon={faChevronDown}/>
-            </p>
+            </button>
             <img className="down-arrow" src="" alt="" />
 
         </div>
