@@ -5,6 +5,12 @@
   color: white;
   text-shadow: 2px 2px 5px grey;
   padding-right: 2vw;
+  overflow: hidden;
+  padding-bottom: 12vh;
+  justify-content: baseline;
+  // justify-content: flex-end;
+  transition: 2s;
+
   h1 {
     font-size: 1.6vw;
     font-weight: 700;
@@ -22,14 +28,17 @@
     display: flex;
     margin-right: 50%;
     justify-content: space-evenly;
-    height: 7vh;
-    align-items: center;
-    font-weight: 600;
+    min-height: 7vh;
     font-size: 1.3vw;
+    align-items: flex-end;
+    padding-bottom: 1vh;
+    font-weight: 600;
+    text-transform: uppercase;
   }
   .fa-signal,
   .fa-globe-europe {
     color: lightgrey;
+    margin-bottom: 0.5vh;
   }
   .logo {
     background-color: white;
@@ -45,6 +54,25 @@
     }
   }
 }
+.info-scroll {
+  //justify-content: flex-end;
+
+  transition: 2s;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 1rem;
+  border: transparent;
+}
 .about-btn {
   display: flex;
   justify-content: center;
@@ -53,7 +81,7 @@
   color: #e6e7e8;
   font-size: 1.4vw;
   padding: 1vh 0.5vw;
-  margin: 8vh 0 0 0;
+  margin: 8vh 1vw 3.5vh 1vw;
   cursor: pointer;
   border-radius: 2vw;
   transition: 0.1s;
@@ -61,12 +89,29 @@
     outline: none;
   }
   &:hover {
-    background-color: rgb(168, 168, 168);
+    background-color: rgb(160, 160, 160);
     transition: 0.1s;
-    box-shadow: rgb(168, 168, 168) 0 0 1vw, rgb(168, 168, 168) 0 0 1vw,
-      rgb(168, 168, 168) 0 0 0.3vw, rgb(168, 168, 168) 0 0 1vw;
+    box-shadow: rgb(160, 160, 160) 0 0 1vw, rgb(160, 160, 160) 0 0 1vw,
+      rgb(160, 160, 160) 0 0 0.3vw;
   }
 }
+
+.about {
+  margin-left: 5%;
+  overflow-y: scroll;
+  min-height: 50vh;
+  opacity: 0;
+  // display: none;
+  display: block;
+  transition: 1s;
+}
+.about-show {
+  opacity: 1;
+  // display: block;
+  transition: 1s;
+  bottom: -20vh;
+}
+
 .description {
   margin-left: 5%;
   margin-top: 5%;

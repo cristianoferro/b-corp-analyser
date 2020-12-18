@@ -11,26 +11,28 @@
 .is-certified {
   height: 17.5vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-end;
-  font-size: 1.5vw;
-  text-transform: capitalize;
   color: #bdf7ff;
   padding-bottom: 1vh;
   font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.3vw;
 }
 .score {
   font-size: 2vw;
   color: #bdf7ff;
   font-weight: 600;
   text-shadow: #95f3ff 0 0 1vw, #95f3ff 0 0 0.8vw;
+  width: 6vw;
+  text-align: center;
 }
 .badges {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 18.75vw;
+  /*width: 18.75vw;*/
   height: 28vh;
 }
 .badge {
@@ -48,8 +50,23 @@
   font-size: 1.5vw;
   p {
     margin-left: 2vw;
+    width: 9vw;
   }
   &:last-child {
     margin-top: 2vh;
   }
+}
+.fa-award {
+  border-radius: 2vw;
+  width: 4vw;
+  height: 4vw;
+  margin: 1vw;
+  padding: 0.5vw;
+  color: #bdf7ff;
+  svg {
+    width: 4vw;
+  }
+}
+.svg-inline--fa.fa-w-12 {
+  width: 4vw;
 }

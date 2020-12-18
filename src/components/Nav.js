@@ -8,10 +8,12 @@ const Nav = () => {
                 <h1>Rankings</h1>
                 <h1>Hall of Fame</h1>
             </div>
-
-            <div className="search-box">
+            <div className="search-bar">
+                <input className="search-text" type="text">
+                </input>
                 <FontAwesomeIcon icon={faSearch} />
             </div>
+            
         </nav>
     );
 }
