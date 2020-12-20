@@ -1,7 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAward } from '@fortawesome/free-solid-svg-icons';
+import CountUp from 'react-countup';
 
 const CorpStats = ({currentCorp}) => {
+
+    let counting = 0;
+
     const isBCorp = currentCorp.currentCorp.b_corp;
     console.log(currentCorp.currentCorp.left_to_b_corp);
     const left = currentCorp.currentCorp.left_to_b_corp;
@@ -10,7 +14,7 @@ const CorpStats = ({currentCorp}) => {
             <p className="is-certified">{`${isBCorp? "Certified B Corporation":`${left}`+' % to be a B Corp'}`}</p>
             <div className="badges">
                 <div className="badge">
-                    <span className="score">120%</span>
+                    <CountUp className="score" end={currentCorp.currentCorp.score} suffix="%"/>
                     <img className="performance-arrow" src="" alt="" />
                     <p>Above Average</p>
                 </div>
