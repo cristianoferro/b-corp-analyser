@@ -29,7 +29,9 @@ const Info = ({ currentCorp }) => {
             <p className="description">{currentCorp.currentCorp.description}</p>
 
             <button onClick={aboutClickHandler} className="about-btn">
-                <p> About <b>{currentCorp.currentCorp.company}</b> </p> 
+                <p> 
+                    {aboutClicked?'About ':'About '}<b>{currentCorp.currentCorp.company}</b>
+                </p> 
                 <FontAwesomeIcon icon={faChevronDown}/>
             </button>
             <img className="down-arrow" src="" alt="" />
