@@ -26,42 +26,73 @@
   text-shadow: #95f3ff 0 0 1vw, #95f3ff 0 0 0.8vw;
   width: 6vw;
   text-align: center;
+  user-select: none;
+  margin-top: 1.5vh;
+}
+.score-detail {
+  margin-top: 3vh;
+  font-size: 1.5vh;
+  height: max-content;
+  overflow: hidden;
 }
 .badges {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   /*width: 18.75vw;*/
   height: 28vh;
+  transition: 0.4s;
+}
+.extended {
+  height: 49vh;
+  transition: 0.4s;
 }
 .badge {
   background-color: #a7a9ac;
   border-radius: 2vw;
-  height: 8vw;
+  position: relative;
+  min-height: 13vh;
+  height: 13vh;
   width: 100%;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;
-  padding: 0 2vw;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5vh 2vw;
   color: white;
   font-weight: 600;
   font-size: 1.5vw;
-  transition: 0.5s;
+  transition: 0.4s;
   cursor: pointer;
   p {
     margin-left: 2vw;
     width: 9vw;
+    user-select: none;
   }
   &:last-child {
     margin-top: 2vh;
   }
   &:hover {
     box-shadow: inset 0 0 0.5em 0.2em #b9f9ff66;
-    transition: 0.1s;
+    transition: 0.4s;
+    box-shadow: 0 0 0.5em 0.2em #b9f9ff66;
+    background-color: #aeb0b3;
+    transform: scale(1.02);
   }
 }
+.extend-badge {
+  height: 60vh; /*absurd value so it extends to max; 
+  -webkit-fill-available would break transition effect */
+  transition: 0.4s;
+}
+
+.badge-main-content {
+  display: flex;
+  flex-direction: row;
+  max-height: 7vh;
+}
+
 .fa-award {
   border-radius: 2vw;
   width: 4vw;
