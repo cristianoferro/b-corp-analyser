@@ -31,15 +31,27 @@ const CorpStats = ({currentCorp}) => {
                         <p>Above Average</p>
                     </div>
                     <div className="score-detail">
-                        <p>86.9</p><p>score</p>
-                        <p>80</p><p>Qualifies for b corp certification</p>
-                        <p>50.9</p><p>median score for ordinary businesses</p>
+                        <div className="score-cols">
+                            <p>86.9</p>
+                            <p>80</p>
+                            <p>50.9</p>
+                        </div>
+                        <div className="score-cols">
+                            <svg viewbox="0 0 100 0.2">
+                                <circle cx="8" cy="8" r="4" stroke="white" stroke-width="2" fill="yellow" />
+                                <line x1="0" y1="0" x2="0" y2="50" />
+                                <circle cx="8" cy="50" r="40" stroke="white" stroke-width="2" fill="yellow" />
+                                <line x1="0" y1="0" x2="0" y2="50" />
+                                <circle cx="50" cy="50" r="40" stroke="white" stroke-width="2" fill="yellow" />
+                                <line x1="0" y1="0" x2="0" y2="50" />   
+                            </svg>
+                        </div>
+                        <div className="score-cols">
+                            <p>score</p>
+                            <p>Qualifies for b corp certification</p>
+                            <p>median score for ordinary businesses</p>
+                        </div>
                     </div>
-
-                    {/* <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"> */}
-                    {/* context.moveTo(217,92);
-                    context.lineTo(217,229); */}
-                    {/* </canvas> */}
                     
                 </div>
                 <div onClick={extendBadge2} className={`badge ${isBadge2Extended?'extend-badge':''}`}>
