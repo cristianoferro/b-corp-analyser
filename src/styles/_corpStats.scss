@@ -14,7 +14,7 @@
   justify-content: center;
   align-items: flex-end;
   color: #bdf7ff;
-  padding-bottom: 1vh;
+  padding-bottom: 1.5vh;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 1.3vw;
@@ -33,13 +33,63 @@
   margin-top: 3vh;
   font-size: 1.5vh;
   height: max-content;
+  max-width: 100%;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
+  width: 100%;
   align-items: center;
 }
 
 .score-cols {
+  max-width: 33%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.score-cols p {
+  margin-left: 0 !important;
+}
+.score-numbers p {
+  text-align: end;
+}
+.score-cols p {
+  font-size: 1vw;
+  margin-bottom: 3.7vh;
+}
+.score-cols:last-child {
+  max-width: max-content;
+}
+
+.svg_score_vertical {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 15%;
+}
+.svg_score_vertical svg {
+  width: 1.4vw;
+  margin-top: 0.2vh;
+}
+
+.score_types p:nth-child(2) {
+  color: #c7ffef;
+  font-size: 0.6vw;
+  margin-bottom: 5vh;
+  margin-top: 0.6vh;
+}
+
+.score_types p:last-child {
+  color: #e0e0e0;
+  font-size: 0.6vw;
+}
+
+.score-nr {
+}
+
+.b-corp-score_nr {
+}
+
+.ordinary-score-nr {
 }
 
 .badges {
@@ -97,7 +147,7 @@
 .badge-main-content {
   display: flex;
   flex-direction: row;
-  max-height: 7vh;
+  // max-height: 7vh;
 }
 
 .fa-award {

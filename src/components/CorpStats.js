@@ -31,25 +31,27 @@ const CorpStats = ({currentCorp}) => {
                         <p>Above Average</p>
                     </div>
                     <div className="score-detail">
-                        <div className="score-cols">
-                            <p>86.9</p>
-                            <p>80</p>
-                            <p>50.9</p>
+                        <div className="score-cols score-numbers">
+                            <p className="score-nr">86.9</p>
+                            <p className="b-corp-score_nr">80</p>
+                            <p className="ordinary-score-nr">50.9</p>
                         </div>
-                        <div className="score-cols">
+                        <div className="score-cols svg_score_vertical">
                             <svg viewbox="0 0 100 0.2">
-                                <circle cx="8" cy="8" r="4" stroke="white" stroke-width="2" fill="yellow" />
-                                <line x1="0" y1="0" x2="0" y2="50" />
-                                <circle cx="8" cy="50" r="40" stroke="white" stroke-width="2" fill="yellow" />
-                                <line x1="0" y1="0" x2="0" y2="50" />
-                                <circle cx="50" cy="50" r="40" stroke="white" stroke-width="2" fill="yellow" />
-                                <line x1="0" y1="0" x2="0" y2="50" />   
+                                <circle cx="0.63vw" cy="0.63vw" r="0.44vw" stroke="white" stroke-width="3" fill="#b8ffff" />
+                                <line x1="0.63vw" y1="1.06vw" x2="0.63vw" y2="3.57vw" />
+
+                                <circle cx="0.63vw" cy="4.01vw" r="0.44vw" stroke="white" stroke-width="3" fill="#ffffff00" />
+                                <line x1="0.63vw" y1="4.45vw" x2="0.63vw" y2="7vw"  />
+
+                                <circle cx="0.63vw" cy="7.4vw" r="0.44vw" stroke="#e0e0e0" stroke-width="3" fill="#ffffff00" />
+                                
                             </svg>
                         </div>
-                        <div className="score-cols">
-                            <p>score</p>
-                            <p>Qualifies for b corp certification</p>
-                            <p>median score for ordinary businesses</p>
+                        <div className="score-cols score_types">
+                            <p>Score</p>
+                            <p>Qualifies for B Corp Certification</p>
+                            <p>Median score for ordinary businesses</p>
                         </div>
                     </div>
                     
@@ -60,9 +62,9 @@ const CorpStats = ({currentCorp}) => {
                         <p>Extra Effort Badge</p>
                     </div>
                     <div className="score-detail">
-                        <p>86.9</p><p>score</p>
+                        {/* <p>86.9</p><p>score</p>
                         <p>80</p><p>Qualifies for b corp certification</p>
-                        <p>50.9</p><p>median score for ordinary businesses</p>
+                        <p>50.9</p><p>median score for ordinary businesses</p> */}
                     </div>
                 </div>
             </div>
