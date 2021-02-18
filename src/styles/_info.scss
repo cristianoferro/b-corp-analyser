@@ -5,11 +5,10 @@
   color: white;
   text-shadow: 2px 2px 5px grey;
   padding-right: 2vw;
-  overflow: hidden;
+  // overflow: hidden;
   padding-bottom: 12vh;
   justify-content: baseline;
   // justify-content: flex-end;
-  transition: 2s;
 
   h1 {
     font-size: 1.6vw;
@@ -18,46 +17,44 @@
     text-transform: capitalize;
     text-shadow: 2px 2px 5px grey;
   }
-  .corp-title {
-    height: 10.5vh;
-    display: grid;
-    align-items: flex-end;
-    padding-bottom: 1vh;
-  }
-  .info-rank {
-    display: flex;
-    margin-right: 50%;
-    justify-content: space-evenly;
-    min-height: 7vh;
-    font-size: 1.3vw;
-    align-items: flex-end;
-    padding-bottom: 1vh;
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-  .fa-signal,
-  .fa-globe-europe {
-    color: lightgrey;
-    margin-bottom: 0.5vh;
-  }
-  .logo {
-    background-color: white;
-    border-radius: 2vw;
-    display: flex;
-    height: 28vh;
-    img {
-      background-color: white;
-      border-radius: 15pt;
-      min-height: 100%;
-      object-fit: cover;
-      min-width: 100%;
-    }
-  }
 }
-.info-scroll {
-  justify-content: flex-end;
-
-  transition: 2s;
+.corp-title {
+  height: 10.5vh;
+  display: grid;
+  align-items: flex-end;
+  padding-bottom: 1vh;
+  transition: 0.5s;
+}
+.info-rank {
+  display: flex;
+  margin-right: 50%;
+  justify-content: space-evenly;
+  min-height: 7vh;
+  font-size: 1.3vw;
+  align-items: flex-end;
+  padding-bottom: 1.5vh;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.fa-signal,
+.fa-globe-europe {
+  color: lightgrey;
+  margin-bottom: 0.5vh;
+}
+.logo {
+  background-color: white;
+  border-radius: 2vw;
+  display: flex;
+  height: 28vh;
+  transition: 0.5s;
+  img {
+    background-color: white;
+    border-radius: 15pt;
+    min-height: 100%;
+    object-fit: cover;
+    min-width: 100%;
+  }
 }
 
 *::-webkit-scrollbar {
@@ -84,6 +81,7 @@
   margin: 2vh 1vw 3.5vh 1vw;
   cursor: pointer;
   border-radius: 2vw;
+  height: 4vh;
   transition: 0.2s;
   &:focus {
     outline: none;
@@ -104,16 +102,11 @@
   margin-left: 5%;
   overflow-y: scroll;
   min-height: 50vh;
-  opacity: 0;
+  // opacity: 0;
   font-size: 1vw;
   // display: none;
   display: block;
-}
-.about-show {
-  opacity: 1;
-  // display: block;
-  transition: 1s;
-  bottom: -20vh;
+  transition: 0.5s;
 }
 
 .description {
@@ -123,6 +116,7 @@
   min-height: 17.5vh;
   height: 17.5vh;
   overflow-y: scroll;
+  transition: 0.5s;
 }
 .fa-chevron-down {
   margin-left: 1vw;
