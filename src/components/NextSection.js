@@ -5,8 +5,10 @@ const NextSection = () => {
             <div className="next-title">
                 <h1>compare</h1>
             </div>
-        
-            {/*NextElement loop*/}
+            <div className="next-wrapper">
+                <NextElement/>
+            </div>
+            <NextElement/>
             <NextElement/>
             <button>
                 See more
