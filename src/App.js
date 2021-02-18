@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Nav from "./components/Nav";
 import ScreenCorpPresentation from "./components/ScreenCorpPresentation";
+import Footer from "./components/Footer";
 import data from "./data";
 
 import "./styles/App.scss";
@@ -15,6 +16,7 @@ function App() {
       <div className="background-test-ref"></div>
       <Nav />
       <ScreenCorpPresentation currentCorp={currentCorp}/>
+      <Footer />
     </div>
   );
 }
