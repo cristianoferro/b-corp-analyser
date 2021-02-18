@@ -1,0 +1,29 @@
+.next-element {
+  width: 100%;
+  position: relative;
+  height: 9vh;
+  color: white;
+}
+.side-rankings {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background-color: #829dad;
+  border-radius: 1.5vw;
+  .info-rank {
+    min-height: 4vh;
+  }
+}
+.side-rank-title {
+  font-size: 1vw;
+  margin: 1vh 1vh 0.5vh 2vh;
+  text-transform: uppercase;
+}
+.mini-badges {
+  width: 50%;
+  background-color: #a7a9ac;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  border-radius: 1.5vw;
+}
