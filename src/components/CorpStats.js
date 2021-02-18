@@ -65,6 +65,7 @@ const CorpStats = ({currentCorp}) => {
                         {/* <p>86.9</p><p>score</p>
                         <p>80</p><p>Qualifies for b corp certification</p>
                         <p>50.9</p><p>median score for ordinary businesses</p> */}
+                        <span class="hover-info">Coming soon</span>
                     </div>
                 </div>
             </div>

@@ -27,3 +27,17 @@
   right: 0;
   border-radius: 1.5vw;
 }
+
+.mini-badges:hover .hover-info {
+  visibility: visible;
+}
+
+.hover-info {
+  font-size: 1vw;
+  visibility: hidden;
+  position: absolute;
+  background-color: grey;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  z-index: 10;
+}

@@ -24,6 +24,9 @@
       transition: 0.1s;
       box-shadow: rgb(160, 160, 160) 0 0 1vw, rgb(160, 160, 160) 0 0 1vw,
         rgb(160, 160, 160) 0 0 0.3vw;
+      .hover-info {
+        visibility: visible;
+      }
     }
   }
 }

@@ -14,7 +14,7 @@ const NextElement = () => {
                 </div>
             </div>
             <div className="mini-badges">
-
+                <span class="hover-info">Coming soon</span>
             </div>
         </div>
         

@@ -12,6 +12,7 @@ const NextSection = () => {
             <NextElement/>
             <button>
                 See more
+                <span class="hover-info">Coming soon</span>
             </button>
         </div>
 
